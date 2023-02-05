@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px 400px;
+    /* border: 1px solid grey; */
+}
+h3{
+    
+    font-family:cursive;
+}
+button{
+    /* border: grey; */
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+}
+.top{
+    margin: 0px 650px;
+}

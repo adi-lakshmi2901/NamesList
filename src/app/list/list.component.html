@@ -1,0 +1,12 @@
+<div *ngFor="let y of data; index as i" >
+    <div *ngIf="y[1]!=' ' && y[1]!=''" >
+        <li id="list">{{i+1}}
+    <div *ngFor="let item of y" [ngClass]="'class'+i">
+        <div *ngIf="item">{{ item }}</div>
+        
+    </div>
+    
+    
+    <button type="button" (click)="delete(i)">Delete</button></li>
+</div><br/>
+</div>
