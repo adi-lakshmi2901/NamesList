@@ -19,6 +19,8 @@ export class HeaderComponent {
   ds : any = '';
   arr :object[]=[];
   subarr :string[]=[];
+  nmevent :any;
+  dsevent:any;
   addfun(){
     let a = this.nm;
     let b = this.ds;
@@ -30,13 +32,17 @@ export class HeaderComponent {
     this.subarr=[];
     this.nm=' ';
     this.ds=' ';
+    this.nmevent.value=null;
+    this.dsevent.value=null;
   }
   handleName(event : any){
-    this.nm = event;
+    this.nm = (<HTMLInputElement>event.target).value;
+    this.nmevent =(<HTMLInputElement>event.target);
     // console.log("handle name");
   }
   handleDescr(event: any){
-    this.ds = event;
+    this.ds = (<HTMLInputElement>event.target).value;
+    this.dsevent=(<HTMLInputElement>event.target);
   }
   
   

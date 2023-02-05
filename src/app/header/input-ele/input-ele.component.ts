@@ -12,7 +12,7 @@ export class InputEleComponent {
   
   update(event:any){
     
-    this.x.emit(event.target.value);
+    this.x.emit(event);
   }
   
  
